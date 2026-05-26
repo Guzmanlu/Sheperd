@@ -1,0 +1,370 @@
+/* =========================
+   LAYOUT GENERAL DASHBOARD
+========================= */
+
+.dashboard-layout{
+  display: flex;
+
+  min-height: 100vh;
+
+  background: #f1f5f9;
+}
+
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+
+.dashboard-content{
+  flex: 1;
+
+  padding: 35px;
+
+  overflow-y: auto;
+}
+
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 35px;
+}
+
+.topbar h1{
+  font-size: 38px;
+
+  color: #0f172a;
+
+  margin: 0;
+}
+
+.topbar p{
+  color: #64748b;
+
+  margin-top: 8px;
+}
+
+/* =========================
+   PERFIL
+========================= */
+
+.profile{
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.profile-circle{
+  width: 52px;
+  height: 52px;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.profile span{
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+/* =========================
+   GRID DE CARDS
+========================= */
+
+.cards-container{
+  display: grid;
+
+  grid-template-columns:
+  repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 25px;
+
+  margin-bottom: 35px;
+}
+
+/* =========================
+   CARD GENERAL
+========================= */
+
+.card,
+.stat-card{
+  background: white;
+
+  border-radius: 22px;
+
+  padding: 28px;
+
+  box-shadow:
+  0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* =========================
+   CARDS ESTADISTICAS
+========================= */
+
+.stat-card h3{
+  font-size: 38px;
+
+  color: #2563eb;
+
+  margin: 0;
+}
+
+.stat-card p{
+  margin-top: 12px;
+
+  color: #64748b;
+
+  font-size: 15px;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+
+.section{
+  background: white;
+
+  border-radius: 22px;
+
+  padding: 30px;
+
+  margin-bottom: 30px;
+
+  box-shadow:
+  0 5px 20px rgba(0,0,0,0.05);
+}
+
+.section h2{
+  margin-bottom: 25px;
+
+  color: #0f172a;
+}
+
+/* =========================
+   HEADER DE SECCION
+========================= */
+
+.section-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+.primary-btn{
+  border: none;
+
+  background: #2563eb;
+
+  color: white;
+
+  padding: 12px 20px;
+
+  border-radius: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.primary-btn:hover{
+  background: #1d4ed8;
+}
+
+/* =========================
+   TABLAS
+========================= */
+
+.table-container{
+  overflow-x: auto;
+}
+
+.custom-table{
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.custom-table th{
+  background: #f8fafc;
+
+  padding: 18px;
+
+  text-align: left;
+
+  color: #334155;
+
+  font-size: 14px;
+}
+
+.custom-table td{
+  padding: 18px;
+
+  border-top: 1px solid #e2e8f0;
+
+  color: #475569;
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.status{
+  display: inline-block;
+
+  padding: 8px 14px;
+
+  border-radius: 999px;
+
+  font-size: 13px;
+
+  font-weight: bold;
+}
+
+.status-success{
+  background: #dcfce7;
+
+  color: #166534;
+}
+
+.status-warning{
+  background: #fef3c7;
+
+  color: #92400e;
+}
+
+.status-danger{
+  background: #fee2e2;
+
+  color: #991b1b;
+}
+
+.status-info{
+  background: #dbeafe;
+
+  color: #1d4ed8;
+}
+
+/* =========================
+   GRID INFERIOR
+========================= */
+
+.bottom-grid{
+  display: grid;
+
+  grid-template-columns:
+  repeat(auto-fit, minmax(350px, 1fr));
+
+  gap: 25px;
+
+  margin-top: 30px;
+}
+
+/* =========================
+   ITEMS GENERALES
+========================= */
+
+.list-item{
+  padding: 18px 0;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.list-item:last-child{
+  border-bottom: none;
+}
+
+.list-item h4{
+  margin: 0;
+
+  color: #0f172a;
+}
+
+.list-item p{
+  margin-top: 8px;
+
+  color: #64748b;
+}
+
+/* =========================
+   ALERTAS
+========================= */
+
+.alert-box{
+  padding: 16px;
+
+  border-radius: 14px;
+
+  margin-top: 15px;
+
+  font-weight: 600;
+}
+
+.alert-warning{
+  background: #fef3c7;
+
+  color: #92400e;
+}
+
+.alert-danger{
+  background: #fee2e2;
+
+  color: #991b1b;
+}
+
+.alert-info{
+  background: #dbeafe;
+
+  color: #1d4ed8;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 900px){
+
+  .dashboard-content{
+    padding: 20px;
+  }
+
+  .topbar{
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .cards-container{
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-grid{
+    grid-template-columns: 1fr;
+  }
+
+}
