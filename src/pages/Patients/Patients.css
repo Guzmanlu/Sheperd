@@ -1,0 +1,385 @@
+.patients-layout{
+  display: flex;
+
+  min-height: 100vh;
+
+  background: #f3f5fb;
+}
+
+/* CONTENIDO */
+
+.patients-content{
+  flex: 1;
+
+  padding: 30px;
+}
+
+/* TOPBAR */
+
+.patients-topbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.patients-topbar h1{
+  font-size: 42px;
+
+  color: #0f172a;
+}
+
+.patients-topbar p{
+  margin-top: 10px;
+
+  color: #64748b;
+}
+
+/* ACTIONS */
+
+.topbar-actions{
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.search-box input{
+  width: 300px;
+  height: 50px;
+
+  border: 1px solid #dbe2ea;
+
+  border-radius: 14px;
+
+  padding: 0 18px;
+}
+
+.new-patient-btn{
+  height: 50px;
+
+  border: none;
+
+  background: #2563eb;
+
+  color: white;
+
+  padding: 0 22px;
+
+  border-radius: 14px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+/* GRID */
+
+.patients-grid{
+  display: grid;
+
+  grid-template-columns:
+  1fr 380px;
+
+  gap: 25px;
+}
+
+/* TABLA */
+
+.patients-table-section{
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 25px;
+
+  box-shadow:
+  0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* FILTROS */
+
+.table-filters{
+  display: flex;
+
+  gap: 15px;
+
+  margin-bottom: 25px;
+}
+
+.table-filters input,
+.table-filters select{
+  height: 50px;
+
+  border: 1px solid #dbe2ea;
+
+  border-radius: 14px;
+
+  padding: 0 15px;
+}
+
+.table-filters input{
+  flex: 1;
+}
+
+.filter-btn{
+  border: none;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  padding: 0 25px;
+
+  border-radius: 14px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+/* TABLA */
+
+.patients-table{
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.patients-table th{
+  text-align: left;
+
+  padding: 18px;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.patients-table td{
+  padding: 18px;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.active-row{
+  background: #eff6ff;
+}
+
+/* PACIENTE */
+
+.patient-cell{
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.patient-avatar{
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+
+  background: #dbeafe;
+
+  color: #2563eb;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+}
+
+.green{
+  background: #dcfce7;
+
+  color: #15803d;
+}
+
+.patient-cell h4{
+  margin: 0;
+}
+
+.patient-cell p{
+  margin-top: 5px;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+/* ACTIONS */
+
+.table-actions{
+  display: flex;
+
+  gap: 10px;
+}
+
+.table-actions button{
+  border: none;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 18px;
+}
+
+/* PANEL DERECHO */
+
+.patient-info-panel{
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 25px;
+
+  box-shadow:
+  0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* HEADER */
+
+.patient-header{
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  margin-bottom: 30px;
+}
+
+.big-avatar{
+  width: 80px;
+  height: 80px;
+
+  border-radius: 50%;
+
+  background: #dbeafe;
+
+  color: #2563eb;
+
+  font-size: 30px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.patient-header h2{
+  margin: 0;
+}
+
+.patient-header p{
+  margin-top: 8px;
+
+  color: #64748b;
+}
+
+/* TABS */
+
+.patient-tabs{
+  display: flex;
+
+  gap: 15px;
+
+  margin-bottom: 30px;
+}
+
+.patient-tabs button{
+  border: none;
+
+  background: transparent;
+
+  color: #64748b;
+
+  cursor: pointer;
+
+  padding-bottom: 10px;
+}
+
+.active-tab{
+  color: #2563eb !important;
+
+  border-bottom: 2px solid #2563eb !important;
+}
+
+/* CARDS */
+
+.info-card,
+.notes-card{
+  border: 1px solid #e2e8f0;
+
+  border-radius: 20px;
+
+  padding: 20px;
+
+  margin-bottom: 20px;
+}
+
+.card-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.card-header button{
+  border: 1px solid #dbe2ea;
+
+  background: white;
+
+  padding: 10px 16px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+}
+
+/* INFO */
+
+.info-list{
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.info-list span{
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+.info-list p{
+  margin-top: 8px;
+
+  color: #0f172a;
+}
+
+/* DELETE */
+
+.delete-btn{
+  width: 100%;
+  height: 55px;
+
+  border: 1px solid #fecaca;
+
+  background: white;
+
+  color: #dc2626;
+
+  border-radius: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}

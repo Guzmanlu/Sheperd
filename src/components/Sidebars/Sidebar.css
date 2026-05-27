@@ -1,55 +1,87 @@
-.sidebar{
+.sidebar {
   width: 280px;
-
-  height: 100vh;
-
-  background: #0f172a;
-
+  background: #1e2937;
   color: white;
-
-  padding: 30px 20px;
-}
-
-.logo{
-  font-size: 32px;
-  font-weight: bold;
-
-  margin-bottom: 50px;
-}
-
-.sidebar-menu{
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-
-  gap: 15px;
+  flex-shrink: 0;           /* Importante */
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.menu-item{
-  height: 55px;
+/* ==================== HEADER / LOGO ==================== */
+.sidebar-header {
+  padding: 25px 24px 30px 24px;
+  border-bottom: 1px solid #334155;
+}
 
-  border: none;
+.sidebar-logo {
+  width: 190px;
+  height: auto;
+}
 
-  border-radius: 14px;
+/* ==================== MENU ==================== */
+.sidebar-menu {
+  flex: 1;
+  padding: 15px 12px;
+}
 
-  background: transparent;
+.sidebar-item {
+  display: block;
+  width: 100%;
+  padding: 14px 24px;
+  margin-bottom: 4px;
+  color: #cbd5e1;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 15.5px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
 
+.sidebar-item:hover {
+  background: #334155;
   color: white;
+}
 
-  text-align: left;
+.sidebar-item.active {
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+}
 
-  padding-left: 20px;
+/* ==================== USUARIO Y LOGOUT ==================== */
+.sidebar-user, .logout-button {
+  /* mismos estilos que antes */
+}
 
-  font-size: 17px;
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 24px;
+  border-top: 1px solid #334155;
+  margin-top: auto;
+}
 
-  transition: 0.3s;
+.user-avatar img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
 
+.logout-button {
+  margin: 12px 24px 24px 24px;
+  padding: 13px 20px;
+  background: transparent;
+  border: 1px solid #f87171;
+  color: #f87171;
+  border-radius: 10px;
+  font-weight: 500;
   cursor: pointer;
 }
 
-.menu-item:hover{
-  background: #1e293b;
-}
-
-.active{
-  background: #2563eb;
+.logout-button:hover {
+  background: #f87171;
+  color: white;
 }
